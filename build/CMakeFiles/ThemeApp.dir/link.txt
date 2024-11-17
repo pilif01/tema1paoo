@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ThemeApp.dir/main.cpp.o CMakeFiles/ThemeApp.dir/entity.cpp.o -o ThemeApp 

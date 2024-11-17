@@ -1,0 +1,3 @@
+/home/ale/Documents/filip/build/CMakeFiles/ThemeApp.dir
+/home/ale/Documents/filip/build/CMakeFiles/edit_cache.dir
+/home/ale/Documents/filip/build/CMakeFiles/rebuild_cache.dir
