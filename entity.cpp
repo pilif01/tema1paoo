@@ -2,14 +2,14 @@
 #include <iostream>
 #include <algorithm>
  
-// Constructor
+//constructor
 Entity::Entity(const string &entity_name, int entity_size)
     : name(entity_name), size(entity_size), data(new int[entity_size])
 {
     cout << "Entity constructor: " << name << ", size: " << size << endl;
 }
  
-// Copy constructor
+//copy constructor
 Entity::Entity(const Entity& other)
     : name(other.name), size(other.size), data(new int[other.size])
 {
@@ -17,7 +17,7 @@ Entity::Entity(const Entity& other)
     cout << "Entity copy constructor: " << name << endl;
 }
  
-// Move constructor
+//move constructor
 Entity::Entity(Entity&& other) noexcept
     : name(move(other.name)), size(other.size), data(other.data)
 {
@@ -26,14 +26,14 @@ Entity::Entity(Entity&& other) noexcept
     cout << "Entity move constructor: " << name << endl;
 }
  
-// Destructor
+//destructor
 Entity::~Entity()
 {
     delete[] data;
     cout << "Entity destructor: " << name << endl;
 }
  
-// Copy assignment operator
+//copy assignment operator
 Entity& Entity::operator=(const Entity& other)
 {
     if (this != &other) {
@@ -47,7 +47,7 @@ Entity& Entity::operator=(const Entity& other)
     return *this;
 }
  
-// Move assignment operator
+//move assignment oprator
 Entity& Entity::operator=(Entity&& other) noexcept
 {
     if (this != &other) {
@@ -62,7 +62,6 @@ Entity& Entity::operator=(Entity&& other) noexcept
     return *this;
 }
  
-// Getter for name
 string Entity::getName() const
 {
     return name;
